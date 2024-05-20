@@ -1,6 +1,8 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 16px;
   align-items: center;
   height: 100vh;
   background-color: #222;
@@ -11,12 +13,26 @@ body {
   width: 600px;
   display: flex;
   flex-wrap: wrap;
+  background-color: black;
 }
 
 .pixel {
   background-color: white;
+  opacity: 1.0;
   /*
   border: 1px solid white;
   box-sizing: border-box;
   */
+}
+
+button#btn-resize {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+}
+
+button#btn-resize:hover {
+  background-color: #111;
 }

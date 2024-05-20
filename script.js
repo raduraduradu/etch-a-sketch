@@ -29,6 +29,7 @@ function createGrid(gridSize) {
     pixels[i].setAttribute("style", `height: ${pxHeight}px; width: ${pxWidth}px;`)
     pixels[i].addEventListener("mouseover", () => {
       pixels[i].style.backgroundColor = `rgb(${randomInt(0, 255)}, ${randomInt(0, 255)}, ${randomInt(0, 255)})`;
+      pixels[i].style.opacity = String(Number(getComputedStyle(pixels[i]).getPropertyValue("opacity") - 0.1));
     })
 
     container.appendChild(pixels[i]);
