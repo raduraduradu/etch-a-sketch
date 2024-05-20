@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+}
+
+.container {
+  height: 600px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pixel {
+  background-color: white;
+  /*
+  border: 1px solid white;
+  box-sizing: border-box;
+  */
+}
