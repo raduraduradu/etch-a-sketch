@@ -11,7 +11,7 @@ function randomInt(min, max) {
 
 function getNewSize() {
   let size = Number(prompt("Enter a number (under 100)"));
-  while(isNaN(size) || size > 100)
+  while(isNaN(size) || size > 100 || size < 1)
   {
     alert("Invalid input");
     size = Number(prompt("Enter a number (under 100)"));
